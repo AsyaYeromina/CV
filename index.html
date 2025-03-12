@@ -2,11 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeromina Anastasiia CV</title>
+    <title>Anastasiia Yeromina - Front End Developer CV</title>
+    <link rel="stylesheet" href="src/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Download CV Button (Fixed Position) -->
+    <a href="#" id="download-cv" class="download-button" title="Download CV as PDF">
+        <i class="fas fa-file-pdf"></i>
+        <span>Download CV</span>
+    </a>
 
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="https://avatars.githubusercontent.com/u/9693794?v=4" alt="Anastasiia Yeromina">
+                </div>
+                <div class="profile-info">
+                    <h1>ANASTASIIA YEROMINA</h1>
+                    <h2>FRONT END DEVELOPER</h2>
+                    <div class="skill-badges">
+                        <span class="badge">React</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Me -->
+        <section class="section summary-section">
+            <h2 class="section-title summary-title">Professional Summary</h2>
+            <p class="section-text summary-text">
+                Detail-oriented with extensive expertise in HTML, CSS, JavaScript, and responsive web design.
+                Skilled in optimizing user experiences.
+                <br> Strong problem-solving abilities and passion
+                for continuous learning in technology. Courage in using React on real projects.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section class="section skills-section">
+            <h2 class="section-title skills-title">Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="badges">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Redux</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Others</h3>
+                    <div class="badges">
+                        <span class="badge">Git</span>
+                        <span class="badge">npm</span>
+                        <span class="badge">Parcel</span>
+                        <span class="badge">Webpack</span>
+                        <span class="badge">RESTful APIs</span>
+                        <span class="badge">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section projects-section">
+            <h2 class="section-title projects-title">Projects</h2>
+
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="section languages-section">
+            <h2 class="section-title languages-title">Languages</h2>
+
+            <div class="languages">
+                <div class="language-item">
+                    <h3>Ukrainian</h3>
+                    <p class="language-level">Native</p>
+                </div>
+
+                <div class="language-item">
+                    <h3>English</h3>
+                    <p class="language-level">B2</p>
+                </div>
+
+                <div class="language-item">
+                    <h3>Polish</h3>
+                    <p class="language-level">B1</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section education-section">
+            <h2 class="section-title education-title">Education</h2>
+
+            <div class="education">
+                <div class="education-item">
+                    <h3>Taras Shevchenko National University of Kyiv</h3>
+                    <p class="education-place">Master's Degree | 2010</p>
+                    <p class="education-details">Educational Management</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>Borys Grinchenko Kyiv University</h3>
+                    <p class="education-place">Bachelor's Degree | 2008</p>
+                    <p class="education-details">Philology</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section">
+            <h2 class="section-title contact-title">Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:asyayeromina@gmail.com">asyayeromina@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+48731172745">+48731172745</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Warsaw</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/AsyaYeromina" target="_blank" rel="noopener noreferrer">github.com/AsyaYeromina</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/anastasia-yeromina-7136a031/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Anastasiia Yeromina. All rights reserved.</p>
+            <p class="footer-note">Front End Developer</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
