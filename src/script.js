@@ -149,12 +149,4 @@ document.getElementById("current-year").textContent = new Date().getFullYear();
 // Initialize the page
 document.addEventListener("DOMContentLoaded", () => {
   createProjectCards();
-
-  // Add click event for download button
-  document.getElementById("download-cv").addEventListener("click", (e) => {
-    e.preventDefault();
-    alert("CV download started!");
-    // In a real implementation, this would trigger the PDF download
-    // window.location.href = 'path/to/Anastasiia_Yeromina_CV.pdf';
-  });
 });
