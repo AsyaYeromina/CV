@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #000;
-  --text-color: #333;
+  --primary-color: #00033a;
+  --text-color: #00033a;
   --text-muted: #6c757d;
   --bg-color: #f8f9fa;
   --card-bg: #ffffff;
@@ -17,6 +17,8 @@
   --link-color: #0066cc;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --button-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --background-gradient: linear-gradient(to right, #1e0933 0%, #00033a 100%);
+  --background-gradient-small: linear-gradient(to right, #37105d 0%, #0f125c 100%);
 }
 
 html {
@@ -24,8 +26,8 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -76,7 +78,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
+  background-image: var(--background-gradient-small);
   color: white;
   padding: 0.75rem 1.25rem;
   border-radius: 50px;
@@ -91,15 +93,16 @@ p {
 }
 
 .download-button:hover {
-  background-color: #3a56c5; /* Darker shade */
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to right, #371a54 0%, #181d74 100%);
   text-decoration: none;
 }
 
 .download-button:active {
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-image: var(--background-gradient-small);
 }
 
 .download-button i {
@@ -109,7 +112,7 @@ p {
 
 /* Header styles */
 .header {
-  background-color: var(--primary-color);
+  background-image: var(--background-gradient);
   color: white;
   padding: 2rem 0; /* Less padding on mobile */
   box-shadow: var(--shadow);
@@ -168,7 +171,7 @@ p {
   display: inline-block;
   border: 1px solid #888;
   /* background-color: rgba(255, 255, 255, 0.2); */
-  color: white;
+  color: var(--text-color);
   padding: 0.25rem 0.65rem;
   border-radius: 9999px;
   font-size: 0.85rem; /* Smaller on mobile */
@@ -190,7 +193,8 @@ p {
   border: none;
   background-color: black;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
+  background-image: var(--background-gradient-small);
 }
 
 /* Section styles */
@@ -419,6 +423,7 @@ p {
 /* Footer styles */
 .footer {
   background-color: var(--badge-bg);
+  background-image: var(--background-gradient);
   padding: 1.25rem 0;
   text-align: center;
   margin-top: 2rem;
@@ -611,10 +616,10 @@ p {
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #e9ecef;
+    --text-color: #a2a2a2;
     --text-muted: #adb5bd;
-    --bg-color: #121212;
-    --card-bg: #1e1e1e;
+    --bg-color: #040404;
+    --card-bg: #100f10;
     --border-color: #2d2d2d;
     --badge-bg: #2d2d2d;
     --badge-text: #e9ecef;
@@ -622,11 +627,13 @@ p {
   }
 
   .header {
-    background-color: #3a56c5; /* Darker primary color */
+    background-image: linear-gradient(to right, #1e0933 0%, #00033a 100%);
+    color: var(--text-color);
   }
 
   .download-button {
-    background-color: #3a56c5;
+    background-image: linear-gradient(to right, #1e0933 0%, #00033a 100%);
+    color: var(--text-color);
   }
 
   .download-button:hover {
@@ -639,6 +646,22 @@ p {
   .contact-item i,
   .language-item h3 {
     color: #90caf9; /* Lighter primary color for dark mode */
+  }
+
+  .badges .badge {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid #444;
+    font-weight: 400;
+    background-image: none;
+  }
+
+  .profile-image {
+    border: none;
+  }
+
+  .profile-image img {
+    filter: grayscale(100%) brightness(0.8) contrast(1.1);
   }
 }
 
