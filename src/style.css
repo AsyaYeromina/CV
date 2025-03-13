@@ -12,8 +12,8 @@
   --bg-color: #f8f9fa;
   --card-bg: #ffffff;
   --border-color: #dee2e6;
-  --badge-bg: #e9ecef;
-  --badge-text: #495057;
+  --badge-bg: #bfc1c2;
+  --badge-text: #e9ecef;
   --link-color: #0066cc;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --button-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -62,8 +62,6 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
-  /* text-transform: uppercase; */
-  /* font-weight: 600; */
 }
 
 p {
@@ -169,16 +167,13 @@ p {
 
 .badge {
   display: inline-block;
-  border: 1px solid #888;
-  /* background-color: rgba(255, 255, 255, 0.2); */
-  color: var(--text-color);
+  border: 1px solid var(--badge-bg);
+  border: 1px solid #444;
+  color: var(--badge-text);
   padding: 0.25rem 0.65rem;
   border-radius: 9999px;
   font-size: 0.85rem; /* Smaller on mobile */
   white-space: nowrap;
-  /* background-color: white; */
-  /* color: black; */
-  /* font-weight: 600; */
 }
 
 .badges {
@@ -192,7 +187,6 @@ p {
   color: var(--badge-text);
   border: none;
   background-color: black;
-  color: white;
   font-weight: 400;
   background-image: var(--background-gradient-small);
 }
@@ -645,7 +639,11 @@ p {
   .education-item h3,
   .contact-item i,
   .language-item h3 {
-    color: #90caf9; /* Lighter primary color for dark mode */
+    color: var(--link-color);
+}
+
+  .badge {
+    color: var(--text-color);
   }
 
   .badges .badge {
