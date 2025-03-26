@@ -16,24 +16,24 @@ const projects = [
     title: "2048 Puzzle Game",
     technologies: "JavaScript, HTML5, CSS3",
     image:
-      "https://github.com/AsyaYeromina/js_2048_game/raw/master/src/images/reference.png",
+      "https://github.com/AsyaYeromina/new_2048/raw/main/src/images/reference.png",
     description: [
       "Browser-based version of the popular 2048 puzzle game.",
       "Implemented game mechanics, UI interactions, and local scoring tracking.",
     ],
-    demoUrl: "https://asyayeromina.github.io/js_2048_game/",
-    codeUrl: "https://github.com/AsyaYeromina/js_2048_game",
+    demoUrl: "https://asyayeromina.github.io/new_2048/",
+    codeUrl: "https://github.com/AsyaYeromina/new_2048",
   },
   {
-    title: "E-shop on React",
+    title: "E-shop on React (currently in progress)",
     technologies: "TypeScript, React, Redux, REST API",
-    image: "https://dummyimage.com/350x200/888/aaa",
+    image: "https://github.com/AsyaYeromina/Phone_Catalog/blob/main/src/assets/preview.png",
     description: [
       "Full-featured web store with product catalogue, product page and cart.",
       "Implemented state management and REST API integration.",
     ],
     demoUrl: null,
-    codeUrl: "https://github.com/AsyaYeromina/e-shop-on-react",
+    codeUrl: "https://github.com/AsyaYeromina/Phone_Catalog",
   },
 ];
 
