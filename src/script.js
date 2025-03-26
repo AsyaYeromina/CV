@@ -27,7 +27,7 @@ const projects = [
   {
     title: "E-shop on React (currently in progress)",
     technologies: "TypeScript, React, Redux, REST API",
-    image: "https://github.com/AsyaYeromina/Phone_Catalog/blob/main/src/assets/preview.png",
+    image: "https://github.com/AsyaYeromina/Phone_Catalog/blob/main/src/assets/preview.png?raw=true",
     description: [
       "Full-featured web store with product catalogue, product page and cart.",
       "Implemented state management and REST API integration.",
