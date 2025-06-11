@@ -25,15 +25,16 @@ const projects = [
     codeUrl: "https://github.com/AsyaYeromina/new_2048",
   },
   {
-    title: "E-shop on React (currently in progress)",
-    technologies: "TypeScript, React, Redux, REST API",
-    image: "https://github.com/AsyaYeromina/Phone_Catalog/blob/main/src/assets/preview.png?raw=true",
+    title: "Chrome Extension",
+    technologies: "React, Zustand, REST API, Chrome Extension API",
+    image:
+      "https://placehold.co/600x400/000000/FFF?text=Private+repository+for+Chrome+extension",
     description: [
-      "Full-featured web store with product catalogue, product page and cart.",
-      "Implemented state management and REST API integration.",
+      "Chrome extension for Amazon sellers. Allows adding products to track in tracking App: Amazon Product Page Detection, Integration with tracking App, Displaying the product data (statuses, notifications, charts, etc.) on Amazon Product Page",
+      "All the functionality is implemented in React and Zustand",
     ],
     demoUrl: null,
-    codeUrl: "https://github.com/AsyaYeromina/Phone_Catalog",
+    codeUrl: "https://github.com/AsyaYeromina/chrome_extension",
   },
 ];
 
