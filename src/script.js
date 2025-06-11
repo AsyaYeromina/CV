@@ -34,7 +34,7 @@ const projects = [
       "All the functionality is implemented in React and Zustand",
     ],
     demoUrl: null,
-    codeUrl: "https://github.com/AsyaYeromina/chrome_extension",
+    codeUrl: null,
   },
 ];
 
